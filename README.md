@@ -1,2 +1,1 @@
-# sigapp.tech
-Promoting Technology, Creativity and Innovation
+## SRMIST-SIGAPP Website
