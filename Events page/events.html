@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SIG-APP">
+    <meta name="keywords" content="SIG-APP">
+    <title>EVENTS SIG-APP</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="page.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="favicon-16x16.png">
+    <!--  Open Graph Tags -->
+    <meta property="og:title" content="SIG-APP">
+    <meta property="og:description" content="The Student body of SRM taking over all the technical aspects of students and improving the standards of Technology.">
+    <script src="float-panel.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+    <script async type="text/javascript"> !function () { if (window.JOONBOT_WIDGET_ID) { console.warn("Joonbot snippet included twice"); } else { window.JOONBOT_WIDGET_ID = "698c86ba-fb51-4ec0-b103-33044c515922"; var n, o; o = document.createElement("script"); o.src = "https://js.joonbot.com/init.js", o.defer = !0, o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous"; n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n); } }() </script>
+  </head>
+  <body>
+    <script async type="text/javascript"> !function () { if (window.JOONBOT_WIDGET_ID) { console.warn("Joonbot snippet included twice"); } else { window.JOONBOT_MODE = "embed" window.JOONBOT_WIDGET_ID = "dc60bbbd-e68a-4182-92bf-ab2bf5ec7d73"; var n, o; o = document.createElement("script"); o.src = "https://js.joonbot.com/init.js", o.defer = !0, o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous"; n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n); } }()</script>
+    
+<script>
+  var items = ['Education is not learing of facts, but the training of the mind to think.  -Albert Einstein', 
+  'There’s a lot of real estate in our brain dedicated to facial recognition and to physics that takes a lot of computational power of our brain. — Jon Favreau',
+   'An investment in knowledge pays the best interest. — Benjamin Franklin', 
+   'Anyone who stops learning is old, whether at twenty or eighty. — Henry Ford',
+   'The beautiful thing about learning is that nobody can take it away from you. ― B.B. King',
+   'If you think education is expensive, try estimating the cost of ignorance. — Howard Gardner',
+   'Change is the end result of all true learning. – Leo Buscaglia', 
+   'Education is the passport to the future, for tomorrow belongs to those who prepare for it today. – Malcolm X', 
+   'Education is not preparation for life; education is life itself. – John Dewey', 
+   'Educating the mind without educating the heart is no education at all. ― Aristotle',
+   'Learning is the most powerful weapon which you can use to change the world. – A. P. J. Abdul Kalam',
+   'Education is for improving the world better than you found it. – Marian Wright Edelman',
+   'Education consists mainly of what we have unlearned. ― Mark Twain',
+   'Education is a continual process, it’s like a bicycle… If you don’t pedal you don’t go forward.” – George Weah',
+   'Formal education will make you a living; self-education will make you a fortune. ― Jim Rohn',
+   'The noblest pleasure is the joy of understanding. – Leonardo da Vinci',
+   'Education is one thing no one can take away from you. – Elin Nordegren',
+   'Data are becoming the new raw material of business. - Craig Mundie',
+   'Computers are able to see, hear and learn from experiences without being specifically programmed. Welcome to the future. - Dave Waters',
+   'Impossible only means that you haven’t found the solution yet. – Anonymous',
+   'Research is to see what everybody else has seen, and to think what nobody else has thought. – Albert Szent-Györgyi',
+   'All truths are easy to understand once they are discovered; the point is to discover them. - Galileo Galilei',
+   'Intelligence is the ability to adapt to change. - Stephen Hawking',
+   'Learn as if you were to live forever. - Mahatma Gandhi',
+   'The true sign of intelligence is not knowledge, but imagination. - Albert Einstein'];
+  var item = items[Math.floor(Math.random() * items.length)];
+ let timerInterval
+Swal.fire({
+  title: 'Quote for you!',
+  html: item,
+  timer: 8000,
+  timerProgressBar: true,
+  showConfirmButton: false,
+  willOpen: () => {
+    
+    timerInterval = setInterval(() => {
+      const content = Swal.getContent()
+      if (content) {
+        const b = content.querySelector('b')
+        if (b) {
+          b.textContent = Swal.getTimerLeft()
+        }
+      }
+    }, 100)
+  },
+  willClose: () => {
+    clearInterval(timerInterval)
+  }
+}).then((result) => {
+  /* Read more about handling dismissals below */
+  if (result.dismiss === Swal.DismissReason.timer) {
+    console.log('I was closed by the timer')
+  }
+})
+</script>
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-stick-dark" data-navbar="sticky">
+      <div class="container">
+        <div class="navbar-left">
+          <button class="navbar-toggler" type="button">&#9776;</button>
+          <a class="navbar-brand" href="#">
+          <img class="logo-dark" src="logo1.png" alt="logo" width="140px" height="140px">
+          <img class="logo-light" src="logo1.png" alt="logo" width="140px" height="140px">
+          <!-- <a href="#">DLRG</a> -->
+          </a>
+        </div>
+        
+        <section class="navbar-mobile">
+          <nav class="nav nav-navbar ml-auto">
+            <a class="nav-link hover-move-up" href="index2.html">HOME</a>
+            <a class="nav-link hover-move-up" href="#">PROJECTS</a>
+            <a class="nav-link hover-move-up" href="#">TEAM</a>
+            <li class="nav-item">
+              <a class="nav-link hover-move-up" href="#"><u>EVENTS</u></a>
+            </li>
+          </nav>
+        </section>
+      </div>
+    </nav>
+
+<!-- header -->
+
+    <header class="header text-white h-fullscreen p-0 overflow-hidden" data-overlay="7">
+      <video class="bg-video" src="flying lanterns.jpg" poster="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" autoplay loop></video>
+      <div class="container text-center">
+        <div class="row h-100">
+          
+         <style>
+          .topleft {
+            position: absolute;
+            top: 0;
+            left: 16px;
+          }
+          
+          .bottomleft {
+            position: absolute;
+            bottom: 0;
+            left: 16px;
+          }
+          
+          .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+          }
+          
+          hr {
+            margin: auto;
+            width: 40%;
+          }
+          </style>
+          <body>
+          
+          <div class="bgimg">
+            
+            <div class="middle">
+              <h1 class="display-2 fw-500">New Event in...</h1>
+              <hr>
+              <p id="demo" style="font-size:30px"></p>
+            </div>
+          </div>
+          
+          <script>
+          // Set the date we're counting down to
+          var countDownDate = new Date("Nov 25, 2020 12:00:00").getTime();
+          
+          // Update the count down every 1 second
+          var countdownfunction = setInterval(function() {
+          
+            // Get todays date and time
+            var now = new Date().getTime();
+            
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+            
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+            + minutes + "m " + seconds + "s ";
+            
+            // If the count down is over, write some text 
+            if (distance < 0) {
+              clearInterval(countdownfunction);
+              document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+          }, 1000);
+          </script>
+  
+            <div class="col-12 align-self-end text-center pb-10">
+              
+              <a class="scroll-down-3 scroll-down-white" href="#Events"><span></span><span></span><span></span></a>
+              
+            </div>
+        </div>
+      </div>
+    </header>
+    
+    <main class="main-content">
+      
+      <section class="section"  >
+
+        	<div class="container">
+              <header class="section-header"></header>
+
+            		<h2 class="display-3 fw-400" id="Events" style="text-align: center;">EVENTS</h2>
+
+          		</header>
+
+
+
+			  <class class="row gap-y mt-8 slider-arrows-circle-dark px-7"  data-provide="slider" data-slides-to-show="3" data-slides-to-scroll="1" data-arrows="true" data-autoplay="true" data-autoplay-speed="4000" >
+
+            
+          
+            <div class="col-md-6 col-lg-4 d-inline">
+              <div class="card border hover-shadow-6">
+                <a href="event_single.html"><img class="card-img-top" src="https://images.unsplash.com/photo-1516321165247-4aa89a48be28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Card image cap"></a>
+                <div class="card-body">
+                  <div style="text-align: center">
+            <h5 class="card-title"><a href="#">Event_Name</a></h5></div>
+                  <p><i class="fa fa-map-marker"></i> &ensp; SRM Institute of Science & Tech.</p>
+                  <p><i class="fa fa-calendar"></i>&ensp; 17/11/2020</p>
+            <div style="text-align: center">
+					  <a class="btn btn-outline-primary" href="event_single.html" target="_blank">More</a></div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-4 d-inline">
+              <div class="card border hover-shadow-6">
+                <a href="#"><img class="card-img-top" src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Card image cap"></a>
+                <div class="card-body">
+                  <div style="text-align: center">
+                    <h5 class="card-title"><a href="#">Event_Name</a></h5></div>
+                          <p><i class="fa fa-map-marker"></i> &ensp; SRM Institute of Science & Tech.</p>
+                          <p><i class="fa fa-calendar"></i>&ensp; 17/11/2020</p><div style="text-align: center">
+					  <a class="btn btn-outline-primary" href="#">MORE</a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 d-inline">
+              <div class="card border hover-shadow-6">
+                <a href="#"><img class="card-img-top" src="https://images.unsplash.com/photo-1593444285563-4479fb28226e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Card image cap"></a>
+                <div class="card-body">
+                  <div style="text-align: center">
+                    <h5 class="card-title"><a href="#">Event_Name</a></h5></div>
+                          <p><i class="fa fa-map-marker"></i> &ensp; SRM Institute of Science & Tech.</p>
+                          <p><i class="fa fa-calendar"></i>&ensp; 17/11/2020</p><div style="text-align: center">
+					  <a class="btn btn-outline-primary" href="#">MORE</a></div>
+                </div>
+              </div>
+            </div>
+            </class>
+            <header class="section-header">
+
+              <h2 class="display-3 fw-400">HIGHLIGHTS</h2>
+              <class>
+                
+<div id="carousel">
+<figure id="spinner">
+  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" style="height: 250px; width: 350px;" alt>
+  <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" style="height: 250px; width: 350px;" alt>
+  <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" style="height: 250px; width: 350px;" alt>
+  <img src="https://images.unsplash.com/photo-1547394765-185e1e68f34e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" style="height: 250px; width: 350px;" alt>
+  <img src="https://images.unsplash.com/photo-1535016120720-40c646be5580?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" style="height: 250px; width: 350px;" alt>
+  <img src="https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" style="height: 250px; width: 350px;" alt>
+  <img src="https://images.unsplash.com/photo-1493934558415-9d19f0b2b4d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" style="height: 250px; width: 350px;" alt>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPq9xL2jVR4sGO1i2zKA5VsuyKYuzzKFWjlA&usqp=CAU" style="height: 250px; width: 300px;" alt>
+</figure>
+</div>
+<span style="float:left" class="ss-icon" onclick="galleryspin('-')"><i class="fa fa-arrow-left" style="font-size:24px"></i></span>
+<span style="float:right" class="ss-icon" onclick="galleryspin('')"><i class="fa fa-arrow-right" style="font-size:24px"></i></span>
+<style>
+div#carousel { 
+perspective: 1200px;  
+padding-top: 10%; 
+font-size:0; 
+margin-bottom: 3rem; 
+overflow: hidden; 
+}
+figure#spinner { 
+transform-style: preserve-3d; 
+height: 300px; 
+transform-origin: 50% 50% -500px; 
+transition: 1s; 
+} 
+figure#spinner img { 
+width: 40%; max-width: 425px; 
+position: absolute; left: 30%;
+transform-origin: 50% 50% -500px;
+outline:1px solid transparent; 
+}
+figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+}
+figure#spinner img:nth-child(2) { transform: rotateY(-45deg); }
+figure#spinner img:nth-child(3) { transform: rotateY(-90deg); }
+figure#spinner img:nth-child(4) { transform: rotateY(-135deg); }
+figure#spinner img:nth-child(5){ transform: rotateY(-180deg); }
+figure#spinner img:nth-child(6){ transform: rotateY(-225deg); }
+figure#spinner img:nth-child(7){ transform: rotateY(-270deg); }
+figure#spinner img:nth-child(8){ transform: rotateY(-315deg); }
+div#carousel ~ span { 
+color: #000; 
+margin: 5%; 
+display: inline-block; 
+text-decoration: none; 
+font-size: 2rem; 
+transition: 0.6s color; 
+position: relative; 
+margin-top: -6rem; 
+border-bottom: none; 
+line-height: 0; }
+div#carousel ~ span:hover { color: #888; cursor: pointer; }
+</style>
+<script>
+ var angle = 0;
+function galleryspin(sign) { 
+spinner = document.querySelector("#spinner");
+if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+}
+</script>
+              </class>
+              </header>
+            </div>
+          </section>
+  
+	<hr width="10%">
+    </main>
+    <!-- Footer -->
+    
+    <footer class="footer  bg-dark ">
+      <div class="container">
+        <div class="row gap-y align-items-center">
+          <div class="col-md-6 text-center text-md-left">
+            <div class="nav nav-bold nav-uppercase justify-content-center justify-content-md-start">
+              <a class="nav-link hover-move-up" href="#" target = "_blank"><i class="fa fa-facebook-f" style="font-size:24px"></i></a>
+              <a class="nav-link hover-move-up" href="#" target = "_blank"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+              <a class="nav-link hover-move-up" href="#" target = "_blank"><i class="fa fa-linkedin" style="font-size:24px"></i></a>
+              <a class="nav-link hover-move-up" href="#" target = "_blank"><i class="material-icons">mail</i></a>
+              <a class="nav-link hover-move-up" href="#" target = "_blank"><i class="material-icons">house</i></a>
+            </div>
+          </div>
+          <div class="col-md-6 text-center text-md-right">
+            <small>© <a href="index.html">SRMIST ACM SIG-APP 2020</a>, All rights reserved.</small>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
